@@ -3,36 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Gestionnaire de contact</title>
+		<meta name="Author" content="">
         <meta name="description" content="application permettant de gérer vos contacts">
-  
-		<link rel="stylesheet" type="text/css" media="all" href="css.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
     </head>
     <body>
-    	<div id="conteneur">
-				
+		<div id="wrapper">
+			<div id="conteneur">
 				<form class="formulaire">
 					<h2>Création d'un contact</h2>
 					<div class="saisie">
-						<label>Pseudo:</label>
+						<label class="label">Pseudo:</label>
 						<input type="text" name="pseudo" placeholder="Pseudo" pattern="[a-zA-Z0-9-]{2,10}" title="Uniquement lettres ou chiffres" required>
 						<label class="asterix">*</label>
 					</div>
 					<div class="saisie">
-						<label>Nom:</label>
+						<label class="label">Nom:</label>
 						<input  type="text" name="nom" placeholder="Nom" required pattern="[a-zA-Z0-9-]{1,}" title="Uniquement lettres ou chiffres">
 						<label class="asterix">*</label>
 					</div>
 					<div class="saisie">
-						<label>Prénom:</label>
+						<label class="label">Prénom:</label>
 						<input type="text" name="prenom" placeholder="Prénom" required pattern="[a-zA-Z0-9-]{1,}" title="Uniquement lettres ou chiffres">
 						<label class="asterix">*</label>
 					</div>
 					<div class="saisie">
-						<label>Email:</label>
+						<label class="label">Email:</label>
 						<input type="email" name="email" placeholder="Email" pattern="\b[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\b" title="nom@domain.ttl sans majuscule">
+						
 					</div>
 					<div class="saisie">
-						<label>Tel:</label>
+						<label class="label">Tel:</label>
 						<input placeholder="Telephone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" title="Saisir un numéro à 10 chiffres">
 					</div>
 					<fieldset>
@@ -65,5 +66,6 @@
 						<input class="bouton" type="reset" value="Annuler" id="reset">
 					</div>
 				</form>
+			</div>	
     	</div>
 </html>
